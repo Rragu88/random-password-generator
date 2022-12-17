@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Password Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <p class="p1">Generate a<br> <span>random password</span></p>
+            <p class="p2">Never us an insecure password again.</p>
+            <div class="slider-container">
+                <label class="pwd-length" for="password-length">Password Length:<span class="length-num"></span></label>
+                <input type="range" min="1" max="15" value="15" class="slider" name="password-length">
+
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="un-checked" class="spec-char" name="spec-char">
+                <label for="spec-char">Remove special characters?</label><br />
+                <input type="checkbox" id="un-checked" class="num-char" name="num-char">
+                <label for="num-char">Remove numbers?</label>
+            </div>
+            <button class="generate-btn">Generate passwords</button>
+            <hr>
+            <div class="pwd-container">
+                <div id="1" class="password hidden"></div>
+                <div id="2" class="password hidden"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
